@@ -42,10 +42,16 @@ namespace ConsoleApp1
                         double tmp = estatura[i];
                         estatura[i] = estatura[i + 1];
                         estatura[i + 1] = tmp;
+                        string tmp1 = nombres[i];
+                        nombres[i] = nombres[i + 1];
+                        nombres[i + 1] = tmp1;
                     }
                 }
             }
-            
+            for (int i = 0; i < estatura.Length; i++)
+            {
+                Console.WriteLine(nombres[i] + "   " + estatura[i]);
+            }
         }
     }
 }
